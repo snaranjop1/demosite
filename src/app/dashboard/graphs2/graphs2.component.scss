@@ -1,0 +1,58 @@
+$margin-color: #EEEEEE;
+$boder-width: 10px;
+
+.graphs-two-container {
+  padding: 30px;
+
+  .title {
+    text-align: center;
+  }
+
+  .countries-table {
+    border: 1px solid #c0c0c0;
+    border-radius: 3px;
+    margin: 20px auto;
+
+    td,
+    th {
+      padding: 5px;
+      text-align: left;
+    }
+  }
+
+  .new-country {
+    width: 300px;
+    margin: 0 auto;
+    padding: 50px 0;
+
+    p {
+      color: #1E88E5;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .column-full {
+      padding: 5px 0;
+    }
+  }
+
+  table {
+    width: 90%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    border-spacing: 0;
+
+    td {
+      width: 50%;
+      border: $boder-width solid $margin-color;
+
+      &.org-chart {
+
+        /deep/ .google-visualization-orgchart-table {
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+
+}
